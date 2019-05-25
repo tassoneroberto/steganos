@@ -1,5 +1,5 @@
 # Steganos
-![alt text](https://raw.githubusercontent.com/tassoneroberto/steganos/master/rscreenshots/steganos-logo.png)
+![alt text](https://raw.githubusercontent.com/tassoneroberto/steganos/master/screenshots/steganos-logo.png)
 
 ## Introduction
 
