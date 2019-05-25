@@ -1,0 +1,63 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="activities.SettingsActivity" >
+
+   	<!-- Title bar -->
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/accent_material_dark_1"
+		android:minHeight="56dp">
+
+		<ImageButton
+			android:id="@+id/btn_back_about"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_alignParentLeft="true"
+			android:layout_centerInParent="true"
+			android:layout_marginLeft="7dp"
+			android:background="@android:color/transparent"
+			android:contentDescription="@string/back_string"
+			android:minHeight="45dip"
+			android:minWidth="25dip"
+			android:src="@drawable/ic_ab_back_holo_dark_am" />
+
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_toRightOf="@id/btn_back_about"
+			android:paddingBottom="10dp"
+			android:paddingLeft="5dp"
+			android:paddingTop="10dp"
+			android:text="@string/about_string"
+			android:textColor="#FFFFFF"
+			android:textSize="22sp" />
+
+
+	</RelativeLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:paddingBottom="10dp"
+		android:paddingEnd="10dp"
+		android:paddingLeft="20dp"
+		android:paddingStart="10dp"
+		android:paddingTop="10dp">
+
+		<me.biubiubiu.justifytext.library.JustifyTextView
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:scrollbars="vertical"
+			android:text="@string/description_about_string"
+			android:textSize="23sp"
+			android:verticalScrollbarPosition="defaultPosition" />
+	</ScrollView>
+
+	<!-- Content -->
+
+</LinearLayout>

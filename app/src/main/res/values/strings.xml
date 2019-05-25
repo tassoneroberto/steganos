@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- General string resources -->
+
+    <string name="app_name">Steganos</string>
+
+    <string name="about_string">About</string>
+    <string name="aes_string">AES</string>
+    <string name="audio_string">Audio</string>
+    <string name="audio_channel_string">Audio channel</string>
+
+    <string name="back_string">Back</string>
+
+    <string name="click_select_destination_string">Select destination</string>
+    <string name="click_select_file_hide_string">Select file to hide</string>
+    <string name="click_select_video_string">Select video</string>
+    <string name="content_hide_string">Content to hide</string>
+    <string name="content_string">Text</string>
+    <string name="cryptography_string">Cryptography</string>
+
+    <string name="decode_content_string">Decode content</string>
+    <string name="decode_video_string">Decode a video</string>
+    <string name="destination_string">Destination</string>
+    <string name="display_content_string">Display content</string>
+    <string name="description_about_string">Steganography is an art and science of hiding the secret data or information inside the digitally covered information. The hidden message can be text, image, audio or even video and the cover can be chosen accordingly from either a text, an image, an audio or a video. The traditional method uses image as a cover which has the limitation of embedding dimension. So, cover should be a video to overcome the limitation of embedding dimension. Johannes Trithemius (1462-1516) was a German Abbot. His writing, “Steganographia: Hoe Est Ars Per Occultam Scripturam Animi Sui Voluntatem Absentibus Aperiendi Certa” is ostensibly a work describing methods to communicate with spirits. A rough translation of the Latin title is: “Steganography: the art through which writing is hidden requiring recovery by the minds of men.” Although people have hidden secrets in plain sight, now called steganography, throughout the ages, the recent growth in computational power and technology has propelled it to the forefront of today’s security techniques.\n\nSteganography is somewhat contrast to cryptography, where the existence of the message itself is not disguised, but the content is obscured. Steganography is often confused with cryptology because the both are similar in the way that they both are used to protect important and secrete information. The difference between the two is that Steganography involves hiding information so it appears that no information is hidden at all. If a person views the object that the information is hidden inside of he or she will have no idea that there is any hidden information, therefore the person will not attempt to decrypt the information.\n\nVideo based steganography can be done in two ways: either frame to frame data storing or converting frame into frequency domain and then store the result. First way is something like spatial domain and the second way is like frequency domain. Whichever method is utilized for steganography, the video steganography can be also classified into two types: lossless and lossy steganography.\n\nIn lossless steganography the hidden information and original video file both can be retrieved without any error or modification, while in lossy steganography the hidden information is retrieved correctly while the original video will have some errors. The lossless steganography requires storing hidden information in specification location and will requires some time to run the algorithm in order to find the specific location where hidden information can be get stored. Thus, in real time application, the lossless algorithm is becoming tougher to implement, and that depends on the system specifications.\n\nThe lossy steganography requires storing data at some LSB location or at specific pixel locations. This is easy to implement and it can be apply in real time application with any normal system specifications. The LSB (Least Significant Bit) is used here to hide the data. The first frame is selected as index frame and it contains the information regarding where the information is stored, in which form information is getting stored, what is file type of the information, etc information are stored in the Index Frame. If the first frame is received properly and if the receiver recognized the information then it is very easy to get hidden information from steganography video file.\n</string>
+    <string name="empty_string"></string>
+    <string name="encode_video_string">Encode a video</string>
+    <string name="enter_key_encrypt_string">Enter key to encrypt data</string>
+    <string name="enter_key_decrypt_string">Enter key to decrypt data</string>
+    <string name="enter_file_extension_string">Enter file extension</string>
+    <string name="enter_text_hide_string">Enter here the text to hide</string>
+
+    <string name="file_extension_string">File extension</string>
+    <string name="file_hide_string">Hide a file</string>
+
+    <string name="hide_content_string">Hide content</string>
+
+    <string name="metadata_string">Metadata</string>
+    <string name="metadata_channel_string">Metadata channel</string>
+
+    <string name="ok_string">OK</string>
+
+    <string name="record_video_string">Record a video</string>
+
+    <string name="save_into_file_string">File</string>
+    <string name="settings_string">Settings</string>
+    <string name="select_destination_string">Select a destination</string>
+    <string name="select_video_string">Select a video</string>
+    <string name="social_network_string">Social Network</string>
+
+    <string name="text_hide_string">Hide a text</string>
+
+    <string name="use_audio_channel_string">Use audio channel</string>
+    <string name="use_cryptography_string">Use cryptography</string>
+    <string name="use_metadata_channel_string">Use metadata channel</string>
+    <string name="use_video_channel_string">Use video channel</string>
+
+    <string name="video_string">Video</string>
+    <string name="video_channel_string">Video channel</string>
+    <string name="video_source_string">Source</string>
+
+    <!-- Error string resources -->
+    <string name="error_dest_video_empty_string">The path of the destination video is missing</string>
+    <string name="error_file_extension_empty_string">The file extension is empty</string>
+    <string name="error_file_manager_string">No file manager found</string>
+    <string name="error_file_to_hide_empty_string">The path of the file to hide is empty</string>
+    <string name="error_src_video_path_empty_string">The path of the source video is missing</string>
+    <string name="error_string">Error</string>
+    <string name="error_text_to_hide_empty_string">The text to hide is empty</string>
+
+    <!-- Menu directory strings -->
+    <string name="menu_about_string">About</string>
+    <string name="menu_decode_string">Decode</string>
+    <string name="menu_encode_string">Encode</string>
+    <string name="menu_main_string">Main</string>
+    <string name="menu_settings_string">Settings</string>
+    <string name="menu_social_network_string">Social network</string>
+    <string name="main_send_video">Send a video</string>
+
+
+    <!-- Text compression-->
+    <string name="text_compression">Text compression</string>
+    <string name="text_decompression">Text decompression</string>
+
+    <string name="none">None</string>
+    <string name="lzw">Lempel–Ziv–Welch</string>
+    <string name="deflate">DEFLATE</string>
+
+
+    <!-- P2P file excange-->
+
+    <string name="enable_p2p_button">P2P On/Off</string>
+    <string name="discover_peers_button">Discover</string>
+    <string name="connect_peer_button">Connect</string>
+    <string name="disconnect_peer_button">Disconnect</string>
+    <string name="get_file_button">Send video</string>
+    <string name="empty"></string>
+    <string name="yes">yes</string>
+    <string name="no">no</string>
+    <string name="client_text">This device will act as a client. Click on Gallery button to pick a local(stored) file</string>
+    <string name="empty_message">No devices found. Turn on P2P and perform discovery from the Action Bar</string>
+    <string name="p2p_off_warning">Enable P2P from action bar button above or system settings</string>
+    <string name="group_owner_text">"Am I the Group Owner? "</string>
+    <string name="label_me">ME</string>
+    <string name="label_peers">PEERS</string>
+</resources>

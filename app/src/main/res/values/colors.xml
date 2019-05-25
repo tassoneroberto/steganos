@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="accent_material_dark_1">#005d1f</color>
+    <color name="colorAccent">#008f30</color>
+    <color name="status_bar_color">#FF000000</color>
+    <color name="layout_border_color">#FF111111</color>
+    <color name="my_color_accent">#008f30</color>
+
+</resources>

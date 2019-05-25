@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<algorithms>
+	
+	<algorithm>
+	    <display>Advanced Encryption Standard 128</display>
+	    <keylength>16</keylength>
+	    <path>com.teoinf.steganos.algorithms.cryptography.AdvancedEncryptionStandard128</path>
+	</algorithm>
+	
+	<algorithm>
+	    <display>Advanced Encryption Standard 192</display>
+	    <keylength>24</keylength>
+	    <path>com.teoinf.steganos.algorithms.cryptography.AdvancedEncryptionStandard192</path>
+	</algorithm>
+	
+	<algorithm>
+	    <display>Advanced Encryption Standard 256</display>
+	    <keylength>32</keylength>
+	    <path>com.teoinf.steganos.algorithms.cryptography.AdvancedEncryptionStandard256</path>
+	</algorithm>    
+	
+</algorithms>

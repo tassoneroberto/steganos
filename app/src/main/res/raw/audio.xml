@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<algorithms>
+    
+	<algorithm>
+	    <display>Audio LSB with 1 bit</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerLsb1Bit</path>
+	</algorithm>
+	
+	<algorithm>
+	    <display>Audio LSB with 2 bits</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerLsb2Bits</path>
+	</algorithm>    
+
+	<algorithm>
+	    <display>Audio LSB with 3 bits</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerLsb3Bits</path>
+	</algorithm>    
+	
+	<algorithm>
+	    <display>Audio LSB with 4 bits</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerLsb4Bits</path>
+	</algorithm>
+	<algorithm>
+		<display>Audio MSB with 1 bit</display>
+		<path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerMsb1Bit</path>
+	</algorithm>
+
+	<algorithm>
+		<display>Audio MSB with 2 bits</display>
+		<path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerMsb2Bits</path>
+	</algorithm>
+
+	<algorithm>
+		<display>Audio MSB with 3 bits</display>
+		<path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerMsb3Bits</path>
+	</algorithm>
+
+	<algorithm>
+		<display>Audio MSB with 4 bits</display>
+		<path>com.teoinf.steganos.algorithms.steganography.audio.AACSteganographyContainerMsb4Bits</path>
+	</algorithm>
+</algorithms>

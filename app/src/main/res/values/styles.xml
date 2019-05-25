@@ -1,0 +1,27 @@
+<resources>
+
+
+    <!-- Application theme. -->
+    <style name="MyTheme" parent="Theme.AppCompat.NoActionBar">
+        <item name="android:statusBarColor">@color/accent_material_dark_1</item>
+        <item name="android:navigationBarColor">@color/accent_material_dark_1</item>
+        <item name="android:colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <!-- Button Style -->
+    <style name="CustomButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/btn_custom_state_list</item>
+    </style>
+
+    <style name="RoundButton">
+        <item name="android:layout_width">200dp</item>
+        <item name="android:layout_height">200dp</item>
+        <item name="android:layout_gravity">center_horizontal</item>
+        <item name="android:background">@drawable/btn_custom_state_list</item>
+    </style>
+
+</resources>

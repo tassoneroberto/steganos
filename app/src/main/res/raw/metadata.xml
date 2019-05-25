@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<algorithms>
+    
+	<algorithm>
+	    <display>Metadata Algorithm 1</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.metadata.MetadataAlgorithm1</path>
+	</algorithm>
+	
+	<algorithm>
+	    <display>Metadata Algorithm 2</display>
+	    <path>com.teoinf.steganos.algorithms.steganography.metadata.MetadataAlgorithm2</path>
+	</algorithm>    
+	
+</algorithms>
+

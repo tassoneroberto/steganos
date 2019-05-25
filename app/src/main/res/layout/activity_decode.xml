@@ -1,0 +1,403 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="activities.DecodeActivity" >
+    
+	<!-- Title bar -->
+
+	<RelativeLayout
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content"
+		android:background="@color/accent_material_dark_1"
+		android:minHeight="56dp">
+      
+	    <ImageButton
+	        android:id="@+id/btn_back_decode"
+			android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:minHeight="45dip"
+      		android:minWidth="25dip"
+	        android:layout_marginLeft="7dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_centerInParent="true"
+	        android:contentDescription="@string/back_string"
+	        android:background="@android:color/transparent"
+	        android:src="@drawable/ic_ab_back_holo_dark_am" />
+     	    
+		<TextView
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:layout_centerInParent="true"
+			android:layout_toRightOf="@id/btn_back_decode"
+			android:paddingBottom="10dp"
+			android:paddingLeft="5dp"
+			android:paddingTop="10dp"
+			android:textColor="#FFFFFF"
+			android:textSize="22sp"
+			android:text="@string/decode_video_string"
+
+			/>
+
+		<ImageButton
+			android:id="@+id/btn_settings_decode"
+			android:layout_width="wrap_content"
+			android:layout_height="wrap_content"
+			android:scaleType="fitXY"
+			android:maxHeight="30dp"
+			android:maxWidth="30dp"
+			android:adjustViewBounds="true"
+			android:layout_alignParentRight="true"
+			android:layout_centerInParent="true"
+			android:layout_marginRight="8dip"
+			android:background="@android:color/transparent"
+			android:contentDescription="@string/record_video_string"
+			android:src="@drawable/ic_settings_white_48dp"
+			/>
+
+
+	</RelativeLayout>
+
+	<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+		android:layout_width="fill_parent"
+		android:layout_height="wrap_content">
+
+	<LinearLayout xmlns:card_view="http://schemas.android.com/apk/res-auto"
+		xmlns:tools="http://schemas.android.com/tools"
+		android:layout_width="match_parent"
+		android:layout_height="match_parent"
+		android:orientation="vertical"
+		android:padding="4dp">
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_view"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">
+
+			<LinearLayout
+				android:padding="4dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/video_source_string"
+					android:textSize="20sp" />
+
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="45dip">
+
+					<Button
+						android:id="@+id/btn_select_video_source_decode"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:layout_toStartOf="@+id/img_view_valid_video_source_decode"
+						android:gravity="left|center_vertical"
+						android:text="@string/click_select_video_string" />
+					android:textSize="18sp" />
+
+					<ImageView
+						android:id="@+id/img_view_valid_video_source_decode"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerInParent="true"
+						android:contentDescription="@string/empty_string"
+
+						android:padding="4dp"
+						android:src="@drawable/ic_error_white_48dp" />
+
+				</RelativeLayout>
+
+				<TextView
+					android:id="@+id/sourcePath"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Source Path" />
+
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_layout_cryptography_key_decode"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">
+
+			<LinearLayout
+				android:padding="4dp"
+
+				android:id="@+id/linear_layout_cryptography_key_decode"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/cryptography_string"
+					android:textSize="20sp" />
+
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="45dip">
+
+					<EditText
+						android:id="@+id/edit_text_cryptography_key_decode"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_toLeftOf="@+id/img_view_valid_key_length_decode"
+						android:background="@android:color/transparent"
+						android:hint="@string/enter_key_decrypt_string"
+						android:minHeight="45dip" />
+
+					<ImageView
+						android:id="@+id/img_view_valid_key_length_decode"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerInParent="true"
+						android:padding="4dp"
+
+						android:contentDescription="@string/empty_string"
+						android:src="@drawable/ic_error_white_48dp" />
+				</RelativeLayout>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_view5"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">>
+
+			<LinearLayout
+				android:padding="4dp"
+
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+
+				<TextView
+					android:id="@+id/textView3"
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="Content"
+					android:textSize="20sp" />
+
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content">
+
+					<RadioButton
+						android:id="@+id/chk_box_display_content"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentLeft="true"
+						android:layout_centerInParent="true"
+						android:text="@string/content_string"
+						/>
+
+					<RadioButton
+						android:layout_alignParentRight="true"
+						android:layout_marginEnd="8dp"
+						android:id="@+id/chk_box_save_into_file"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_centerInParent="true"
+						android:text="@string/save_into_file_string"
+
+						/>
+
+
+
+				</RelativeLayout>
+
+				<!-- Process button -->
+
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_view_save_into_file_destination"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">
+
+			<LinearLayout
+				android:padding="4dp"
+				android:layout_width="match_parent"
+				android:layout_height="match_parent"
+				android:orientation="vertical">
+
+				<TextView
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/destination_string"
+					android:textSize="20sp" />
+
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="45dip">
+
+					<Button
+						android:id="@+id/btn_select_file_destination_decode"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+
+						android:layout_alignParentLeft="true"
+						android:layout_centerVertical="true"
+						android:layout_toStartOf="@+id/img_view_valid_video_destination_decode"
+						android:gravity="left|center_vertical"
+						android:text="@string/click_select_destination_string"/>
+					android:textSize="18sp" />
+
+					<ImageView
+						android:id="@+id/img_view_valid_video_destination_decode"
+						android:layout_width="wrap_content"
+						android:layout_height="wrap_content"
+						android:layout_alignParentRight="true"
+						android:layout_centerInParent="true"
+						android:padding="4dp"
+
+						android:contentDescription="@string/empty_string"
+						android:src="@drawable/ic_error_white_48dp" />
+
+				</RelativeLayout>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_layout_decompression"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">
+
+			<LinearLayout
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical"
+				android:padding="4dp">
+
+				<TextView
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/text_decompression"
+					android:textSize="20sp" />
+
+				<RadioGroup xmlns:android="http://schemas.android.com/apk/res/android"
+					android:layout_width="fill_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical">
+					<RadioButton
+						android:id="@+id/radio_no_decompression"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/none" />
+					<RadioButton
+						android:id="@+id/lzwDecompressedText"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/lzw" />
+
+					<RadioButton
+						android:id="@+id/deflateDecompressedText"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/deflate" />
+
+				</RadioGroup>
+
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+
+	       	<!-- Save the content found or display it -->
+		<android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+			android:id="@+id/card_view_save_into_file_extension"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:layout_gravity="center"
+			android:layout_margin="8dp"
+			android:padding="8dp"
+			card_view:cardCornerRadius="8dp">
+
+			<LinearLayout
+				android:padding="4dp"
+
+				android:id="@+id/linear_layout_cryptography_key_encode"
+				android:layout_width="fill_parent"
+				android:layout_height="wrap_content"
+				android:orientation="vertical">
+
+				<TextView
+					style="?android:attr/listSeparatorTextViewStyle"
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:text="@string/file_extension_string"
+					android:textSize="20sp" />
+
+				<RelativeLayout
+					android:layout_width="fill_parent"
+					android:layout_height="45dip">
+
+					<EditText
+						android:id="@+id/edit_text_file_extension"
+						android:layout_width="fill_parent"
+						android:layout_height="wrap_content"
+						android:layout_marginLeft="8dp"
+						android:layout_marginRight="8dp"
+						android:layout_toLeftOf="@+id/img_view_valid_key_length_encode"
+						android:background="@android:color/transparent"
+						android:hint="@string/enter_file_extension_string"
+						android:minHeight="45dip" />
+
+				</RelativeLayout>
+			</LinearLayout>
+		</android.support.v7.widget.CardView>
+
+
+	  		
+	 	    <Button
+		        android:id="@+id/btn_decode"
+
+		        android:text="@string/decode_content_string"
+				android:layout_margin="8dp"
+
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_gravity="center"
+				android:background="@drawable/button_full"
+android:textColor="#FFFFFF"
+				android:textSize="18sp"
+				/>
+
+	 	    
+       	</LinearLayout>
+	</ScrollView>
+</LinearLayout>
